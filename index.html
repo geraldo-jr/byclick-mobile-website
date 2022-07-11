@@ -227,6 +227,10 @@
 		<title>YouTube Downloader - Has Never Been So Easy!  | MP3 & MP4</title>
 
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      
       #first-frame{
         margin: 50px;
         text-align: center;
@@ -234,7 +238,7 @@
 
       h1 {
         text-align: center;
-        font-size: 45px !important;
+        font-size: 4.5em !important;
       }
 
       #app-description {
@@ -245,6 +249,24 @@
         font-weight: normal;
         height: auto;
         text-shadow: 1px 0 rgb(61, 119, 157), 0 2px rgb(61, 119, 157), 1px 0 rgb(61, 119, 157), 0 0px rgb(61, 119, 157);
+      }
+      .btn-download {
+        background-color: rgb(0,167,12);
+        border: none;
+        color: white;
+        font-weight: bold;
+        padding: 12px 30px;
+        cursor: pointer;
+        font-size: 3em;
+        border-radius: 30px;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+      }
+      #button-obs{
+        font-size: .6em;
+      }
+      .SectionHeaderText{
+        width: auto;
+        font-size: 2.8em;
       }
     </style>
   </head>
@@ -563,15 +585,16 @@
       <main id="first-frame">
         <h1>The Best Software To Download Media From The Internet</h1>
         <p id="app-description">Download video, audio, and image from Instagram, TikTok, Facebook, YouTube, Twitter, and others in high quality (4k and 8k) and create your offline backup for all your favorite videos and media. Download in MP4, WMV, AVI, FLV, Webm, MP3, WAV, and other formats.</p>
-
         
+        <button class="btn-download"><a href="#downlading-diretions-header">Download*</a></button>
+<!--         
         <div id="downloadButton">
           <div class="arrow"></div>
           <div id="download_text_new">
             Download*
           </div>
-        </div>
-        <p>*By Click Downloader is a tool developed for Windows. Please, follow instructions below on how to download and use our software.
+        </div> -->
+        <p id="button-obs">*By Click Downloader is a tool developed for Windows. Please, follow instructions below on how to download and use our software.
           </p>
 
         <img id="byclicksoftware-screenshot" src="images\byclickdownloader_screenshot_.png" alt="By Click Downloader software screenshot" sizes="100px" srcset="">
@@ -586,7 +609,7 @@
           <div class="section">
             <div class="SectionHeader">
               <div class="SectionHeaderImage bubble1"></div>
-              <div class="SectionHeaderText">Downloading By Click Downloader</div>
+              <div class="SectionHeaderText" id="downlading-diretions-header">Downloading By Click Downloader</div>
             </div>
             <div class="SectionContent">
               <p>Since our solution is primarily for Windows PCs, please inform us your email below, and we will send you the link with instructions on how to download and use our solution properly. Please check your spam folder if you don’t receive the email directly in your inbox.
